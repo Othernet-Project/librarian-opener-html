@@ -1,0 +1,2 @@
+recursive-include librarian_opener_html *
+recursive-exclude tests *
