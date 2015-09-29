@@ -1,12 +1,11 @@
 /*jslint browser: true*/
 (function ($) {
     'use strict';
-    $.openers = $.openers || {};
-    $.openers.html = function () {
+    $(document).ready(function () {
         var head,
             openerFrame = $(document).find('#opener-main'),
             keepFormatting = openerFrame.data('keep-formatting'),
-            openerCssPatch = $(window.templates.openerCssPatch);
+            openerCssPatch = $($(document).find('#css-patch').html());
 
         function applyStylePatch() {
             var openerDoc = openerFrame.contents();
@@ -24,5 +23,5 @@
         if (openerFrame.contents().prop('readyState') === 'complete') {
             applyStylePatch();
         }
-    };
-}(this.jQuery));
+    });
+}(this.parent.jQuery));
