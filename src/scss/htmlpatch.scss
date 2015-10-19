@@ -1,11 +1,9 @@
 @import "compass/reset";
 @import "base/params";
 @import "base/browser_fixes";
+@import "base/media_query";
 
 html {
-  // Basic geometry
-  padding: 2rem;
-
   // Styling
   background: $o-foreground-material;
   color: $o-base-text-color;
@@ -21,9 +19,13 @@ body {
   line-height: $o-base-line-height;
 
   // Basic geometry
-  padding: 2em;
+  padding: 0 2rem 2rem;
   max-width: 50em;
   margin: 0 auto;
+
+  @include narrower-than(520px) {
+    padding: 0 1rem 2rem;
+  }
 }
 
 img {
@@ -45,12 +47,14 @@ blockquote {
 
 h1 {
   font-size: 200%;
-  margin: 0 0 2rem;
+  margin: 2rem 0;
+  line-height: 100%;
 }
 
 h2 {
   font-size: 160%;
   margin: 1rem 0 1rem;
+  line-height: 100%;
 }
 
 h3 {

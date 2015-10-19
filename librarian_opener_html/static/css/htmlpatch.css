@@ -75,37 +75,52 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * particular browser, please add it here, with description of the solution and
  * any platforms it affects.
  */
-/* line 5, ../../../src/scss/htmlpatch.scss */
+/**
+ * _media_query.scss: media query support
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/* line 6, ../../../src/scss/htmlpatch.scss */
 html {
-  padding: 2rem;
   background: white;
   color: #333;
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 17, ../../../src/scss/htmlpatch.scss */
+/* line 15, ../../../src/scss/htmlpatch.scss */
 body {
   font-family: 'Bookman Old Style', Georgia, serif;
   font-size: 16.8px;
   line-height: 140%;
-  padding: 2em;
+  padding: 0 2rem 2rem;
   max-width: 50em;
   margin: 0 auto;
 }
+@media only screen and (max-width: 520px) {
+  /* line 15, ../../../src/scss/htmlpatch.scss */
+  body {
+    padding: 0 1rem 2rem;
+  }
+}
 
-/* line 29, ../../../src/scss/htmlpatch.scss */
+/* line 31, ../../../src/scss/htmlpatch.scss */
 img {
   max-width: 100%;
   width: auto !important;
   height: auto !important;
 }
 
-/* line 35, ../../../src/scss/htmlpatch.scss */
+/* line 37, ../../../src/scss/htmlpatch.scss */
 p {
   margin-bottom: 1rem;
 }
 
-/* line 39, ../../../src/scss/htmlpatch.scss */
+/* line 41, ../../../src/scss/htmlpatch.scss */
 blockquote {
   font-style: italic;
   margin: 1rem 0;
@@ -113,19 +128,21 @@ blockquote {
   padding-left: 2rem;
 }
 
-/* line 46, ../../../src/scss/htmlpatch.scss */
+/* line 48, ../../../src/scss/htmlpatch.scss */
 h1 {
   font-size: 200%;
-  margin: 0 0 2rem;
+  margin: 2rem 0;
+  line-height: 100%;
 }
 
-/* line 51, ../../../src/scss/htmlpatch.scss */
+/* line 54, ../../../src/scss/htmlpatch.scss */
 h2 {
   font-size: 160%;
   margin: 1rem 0 1rem;
+  line-height: 100%;
 }
 
-/* line 56, ../../../src/scss/htmlpatch.scss */
+/* line 60, ../../../src/scss/htmlpatch.scss */
 h3 {
   font-size: 120%;
   margin: 1rem 0 0.5rem;
