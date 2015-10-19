@@ -78,26 +78,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 5, ../../../src/scss/htmlpatch.scss */
 html {
   padding: 2rem;
-  background: #eee;
+  background: white;
   color: #333;
   -webkit-text-size-adjust: 100%;
 }
 
 /* line 17, ../../../src/scss/htmlpatch.scss */
 body {
-  font-family: Arial, Helvetica, "Liberation Sans", "Open Sans", sans-serif;
-  font-size: 14px;
+  font-family: 'Bookman Old Style', Georgia, serif;
+  font-size: 16.8px;
   line-height: 140%;
   padding: 2em;
   max-width: 50em;
   margin: 0 auto;
-  background: white;
-  border: 1px solid #ddd;
 }
 
-/* line 33, ../../../src/scss/htmlpatch.scss */
+/* line 29, ../../../src/scss/htmlpatch.scss */
 img {
   max-width: 100%;
   width: auto !important;
   height: auto !important;
+}
+
+/* line 35, ../../../src/scss/htmlpatch.scss */
+p {
+  margin-bottom: 1rem;
+}
+
+/* line 39, ../../../src/scss/htmlpatch.scss */
+blockquote {
+  font-style: italic;
+  margin: 1rem 0;
+  border-left: 4px solid #b3b3b3;
+  padding-left: 2rem;
+}
+
+/* line 46, ../../../src/scss/htmlpatch.scss */
+h1 {
+  font-size: 200%;
+  margin: 0 0 2rem;
+}
+
+/* line 51, ../../../src/scss/htmlpatch.scss */
+h2 {
+  font-size: 160%;
+  margin: 1rem 0 1rem;
+}
+
+/* line 56, ../../../src/scss/htmlpatch.scss */
+h3 {
+  font-size: 120%;
+  margin: 1rem 0 0.5rem;
 }

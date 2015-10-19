@@ -7,7 +7,7 @@ html {
   padding: 2rem;
 
   // Styling
-  background: $o-material;
+  background: $o-foreground-material;
   color: $o-base-text-color;
 
   // X-browser
@@ -16,22 +16,44 @@ html {
 
 body {
   // Typography
-  font-family: $o-base-font;
-  font-size: $o-base-text-size;
+  font-family: 'Bookman Old Style', Georgia, serif;
+  font-size: $o-base-text-size * 1.2;
   line-height: $o-base-line-height;
 
   // Basic geometry
   padding: 2em;
   max-width: 50em;
   margin: 0 auto;
-  
-  // Styling
-  background: white;
-  border: $o-separator-border;
 }
 
 img {
   max-width: 100%;
   width: auto !important;
   height: auto !important;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 1rem 0;
+  border-left: 4px solid lighten($o-base-text-color, 50);
+  padding-left: 2rem;
+}
+
+h1 {
+  font-size: 200%;
+  margin: 0 0 2rem;
+}
+
+h2 {
+  font-size: 160%;
+  margin: 1rem 0 1rem;
+}
+
+h3 {
+  font-size: 120%;
+  margin: 1rem 0 0.5rem;
 }
