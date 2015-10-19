@@ -1,33 +1,28 @@
 @import "compass/reset";
-@import "outernet/mixins/colors";
-@import "outernet/partial/fonts";
-@import "outernet/partial/hyperlinks";
-@import "outernet/partial/tables";
-@import "outernet/mixins/media_query";
-@import "mixins/browser_fixes";
-
+@import "base/params";
+@import "base/browser_fixes";
 
 html {
-  @include ios-font-size-fix;
-  background: $iconic;
-  padding: 2em;
+  // Basic geometry
+  padding: 2rem;
 
-  @include phone-portrait-wide {
-    padding: 0;
-  }
+  // Styling
+  background: $o-material;
+  color: $o-base-text-color;
+
+  // X-browser
+  @include ios-font-size-fix;
 }
 
 body {
-  background: $white;
+  // Basic geometry
   padding: 2em;
   max-width: 50em;
   margin: 0 auto;
-  border: 1px solid $border;
-
-  @include phone-portrait-wide {
-    padding: 20px;
-    border: none;
-  }
+  
+  // Styling
+  background: white;
+  border: $o-separator-border;
 }
 
 img {
