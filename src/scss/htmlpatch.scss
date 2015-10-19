@@ -15,6 +15,11 @@ html {
 }
 
 body {
+  // Typography
+  font-family: $o-base-font;
+  font-size: $o-base-text-size;
+  line-height: $o-base-line-height;
+
   // Basic geometry
   padding: 2em;
   max-width: 50em;

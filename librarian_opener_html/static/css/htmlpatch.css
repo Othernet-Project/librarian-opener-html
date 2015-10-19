@@ -85,6 +85,9 @@ html {
 
 /* line 17, ../../../src/scss/htmlpatch.scss */
 body {
+  font-family: Arial, Helvetica, "Liberation Sans", "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
   padding: 2em;
   max-width: 50em;
   margin: 0 auto;
@@ -92,7 +95,7 @@ body {
   border: 1px solid #ddd;
 }
 
-/* line 28, ../../../src/scss/htmlpatch.scss */
+/* line 33, ../../../src/scss/htmlpatch.scss */
 img {
   max-width: 100%;
   width: auto !important;
