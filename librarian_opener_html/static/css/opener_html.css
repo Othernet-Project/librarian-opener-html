@@ -1,7 +1,17 @@
 /* line 1, ../../../src/scss/opener_html.scss */
-#opener-html-main {
+.opener-html-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-overflow-scrolling: touch;
   overflow-y: auto;
-  width: 100% !important;
-  height: 100% !important;
+}
+
+/* line 22, ../../../src/scss/opener_html.scss */
+#opener-html-main {
   display: block;
+  width: 100%;
+  min-height: 100%;
 }
