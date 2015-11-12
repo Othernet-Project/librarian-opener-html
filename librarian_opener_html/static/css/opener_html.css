@@ -1,4 +1,11 @@
-/* line 1, ../../../src/scss/opener_html.scss */
+/**
+ * This module contains base variables that are used to re-skin (customize) the 
+ * Librarian UI toolkit.
+ *
+ * Recommended way to customize the variables is to load a separate module 
+ * containing customized values _before_ this module.
+ */
+/* line 3, ../../../src/scss/opener_html.scss */
 .opener-html-container {
   position: absolute;
   top: 0;
@@ -9,7 +16,7 @@
   overflow-y: auto;
 }
 
-/* line 22, ../../../src/scss/opener_html.scss */
+/* line 24, ../../../src/scss/opener_html.scss */
 #opener-html-main {
   display: block;
   width: 100%;
