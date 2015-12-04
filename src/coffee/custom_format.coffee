@@ -5,6 +5,7 @@
   templates._load 'cssPatch'
   frame = $ '#opener-html-main'
   keepFormatting = frame.data 'keep-formatting'
+  console.log keepFormatting
 
   closeModal = (e) ->
     if e.which == ESC
@@ -28,7 +29,7 @@
         frameContent.on 'keydown', closeModal
       , 500
 
-      if not keepFormatting
+      if keepFormatting
         return
 
       patchStyle()

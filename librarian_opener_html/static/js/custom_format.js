@@ -5,6 +5,7 @@
   templates._load('cssPatch');
   frame = $('#opener-html-main');
   keepFormatting = frame.data('keep-formatting');
+  console.log(keepFormatting);
   closeModal = function(e) {
     if (e.which === ESC) {
       return frame.closeModal();
@@ -29,7 +30,7 @@
         frameContent = $(contentWin.window);
         return frameContent.on('keydown', closeModal);
       }, 500);
-      if (!keepFormatting) {
+      if (keepFormatting) {
         return;
       }
       return patchStyle();
